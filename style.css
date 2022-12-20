@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #ac8e72;
+  outline: none;
+  border: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  background: linear-gradient(to right, #eab869, #cc8050 60%);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-info {
+  width: 200px;
+  height: 320px;
+  background-color: white;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 4px 0 0 4px;
+}
+
+.card-info img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-top: 1rem;
+}
+
+.card-info h1 {
+  font-size: 22px;
+  margin-top: 8px;
+  font-weight: 200;
+}
+
+.card-info label {
+  font-size: 12px;
+}
+
+.card-buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  align-items: center;
+}
+
+.card-buttons button {
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  padding: 10px;
+  width: 75%;
+  background: transparent;
+  border: solid 1px #aa8461;
+  font-weight: 700;
+}
+
+
+
+.card-stats {
+  background: #f5e8df;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0 4px 4px 0;
+}
+
+.card-stats p {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.card-follow,
+.card-posts,
+.card-likes {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 34%;
+}
+
+.card-posts,
+.card-likes{
+    border-bottom: 1px solid white;
+}
