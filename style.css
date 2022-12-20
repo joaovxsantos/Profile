@@ -61,11 +61,16 @@ body {
   padding: 10px;
   width: 75%;
   background: transparent;
-  border: solid 1px #aa8461;
+  border: solid 1px #5a422c;
   font-weight: 700;
+  cursor: pointer;
+  transition: all 1s ease;
 }
 
-
+.card-buttons button:hover {
+  background: #5a422c;
+  color: white;
+}
 
 .card-stats {
   background: #f5e8df;
@@ -74,6 +79,8 @@ body {
   flex-direction: column;
   align-items: center;
   border-radius: 0 4px 4px 0;
+  transition: all 1s ease;
+  cursor: pointer;
 }
 
 .card-stats p {
@@ -84,16 +91,22 @@ body {
 .card-follow,
 .card-posts,
 .card-likes {
-  
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 34%;
+  transition: all 1s ease;
 }
 
 .card-posts,
-.card-likes{
-    border-bottom: 1px solid white;
+.card-likes {
+  border-bottom: 1px solid white;
+}
+
+.card-follow:hover,
+.card-posts:hover,
+.card-likes:hover {
+  background: #f5d4bd;
 }
