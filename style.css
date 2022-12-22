@@ -110,3 +110,29 @@ body {
 .card-likes:hover {
   background: #f5d4bd;
 }
+
+@media (max-width: 450px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-info {
+    border-radius: 0 0 0 0;
+  }
+  .card-info {
+    height: 300px;
+  }
+
+  .card-stats {
+    background: #f5e8df;
+    width: 200px;
+    border-radius: 0 0 0 0;
+  }
+
+  .card-follow,
+  .card-posts,
+  .card-likes {
+    padding: 8px;
+  }
+}
