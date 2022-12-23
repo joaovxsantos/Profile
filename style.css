@@ -20,6 +20,35 @@ body {
 .container {
   display: flex;
   flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.container::before,
+.container::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: calc(100% + 15px);
+  height: calc(100% + 15px);
+  background: linear-gradient(
+    45deg, #fa9c04, #f0d801 , #fa9c04, #f0d801 , #fa9c04, #f0d801 , #fa9c04, #f0d801
+  );
+  background-size: 300%;
+  animation: AnimarBorda 10s linear infinite;
+}
+
+@keyframes AnimarBorda {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 300%;
+  }
+}
+
+.container-card::after {
+  filter: blur(50px);
 }
 
 .card-info {
@@ -75,6 +104,7 @@ body {
 .card-stats {
   background: #f5e8df;
   width: 150px;
+  height: 320px;
   display: flex;
   flex-direction: column;
   align-items: center;
